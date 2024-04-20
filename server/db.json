@@ -1,7 +1,5 @@
 {
-  "data": [
-    
-  ],
+  "data": [],
   "universities": [
     {
       "shortName": "ЧГУ",
@@ -12,16 +10,30 @@
       "frame": [
         {
           "id": 1,
-          "name": "Институт физики и математики",
-          "address": "г. Грозный, бульвар Дудаева 3",
-          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig",
+          "name": "Учебный корпус №1",
+          "address": "г. Грозный, ул. Шерипова, 32",
+          "image": "https://grozny-inform.ru/LoadedImages/2023/04/06/Dq1urDIXcAIcfnJ.jpg",
           "carouselElements": []
         },
         {
           "id": 2,
-          "name": "Медицинский университет",
-          "address": "г. Грозный, улица Кадырова 102",
+          "name": "Учебный корпус №2",
+          "address": "г. Грозный, ул. Шерипова, 32",
           "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg",
+          "carouselElements": []
+        },
+        {
+          "id": 3,
+          "name": "Учебный корпус №3",
+          "address": "г. Грозный, бульвар Дудаева 3",
+          "image": "https://images.fooby.ru/1/77/53/3826022",
+          "carouselElements": []
+        },
+        {
+          "id": 4,
+          "name": "Старый главный корпус",
+          "address": "г. Грозный, ул. Киевская, 33",
+          "image": "https://images.fooby.ru/1/77/56/3827969",
           "carouselElements": []
         }
       ]
@@ -35,16 +47,30 @@
       "frame": [
         {
           "id": 1,
-          "name": "Институт физики и математики",
-          "address": "г. Грозный, бульвар Дудаева 3",
-          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig",
+          "name": "Главный корпус",
+          "address": "г.Грозный, проспект Хусейна Исаева, 100",
+          "image": "https://static.tildacdn.com/tild3237-6562-4462-b765-626335336362/DSC_8691.JPG",
           "carouselElements": []
         },
         {
           "id": 2,
-          "name": "Медицинский университет",
-          "address": "г. Грозный, улица Кадырова 102",
-          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg",
+          "name": "Учебный корпус №1",
+          "address": "Грозный, улица Абдурахмана Авторханова, 14/53",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6lIFJFuU__0ivwi74lOvbb-7fU0J8_I3qaQ0CdFWMQ&s",
+          "carouselElements": []
+        },
+        {
+          "id": 3,
+          "name": "Учебный корпус №2",
+          "address": "г.Грозный, проспект Ахмата Кадырова, 30",
+          "image": "https://gstou.ru/images/university/media/%D0%A3%D0%A7%D0%95%D0%91%D0%9D%D0%AB%D0%95%20%D0%9A%D0%9E%D0%A0%D0%9F%D0%A3%D0%A1%D0%90%20%D0%93%D0%93%D0%9D%D0%A2%D0%A3/%D0%9A%D0%9E%D0%A0%D0%9F%D0%A3%D0%A1%20%D0%A1%D0%98%D0%93%D0%9C%D0%90_/1%20(16).JPG",
+          "carouselElements": []
+        },
+        {
+          "id": 4,
+          "name": "Учебный корпус ФСПО",
+          "address": "г.Грозный, проспект Мухаммеда Али, 8",
+          "image": "https://images.fooby.ru/1/77/53/3826035",
           "carouselElements": []
         }
       ]
@@ -58,20 +84,26 @@
       "frame": [
         {
           "id": 1,
-          "name": "Институт физики и математики",
-          "address": "г. Грозный, бульвар Дудаева 3",
-          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig",
+          "name": " Институт филологии и права",
+          "address": "г. Грозный, проспект Хусейна Исаева 62",
+          "image": "https://proverili.ru/uploads/media/10103/1.jpg",
           "carouselElements": []
         },
         {
           "id": 2,
-          "name": "Медицинский университет",
-          "address": "г. Грозный, улица Кадырова 102",
-          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg",
+          "name": "Институт педагогики, психологии и дефектологии",
+          "address": "г. Грозный, улица Субры Кишиевой 33 ",
+          "image": "https://avatars.mds.yandex.net/get-altay/1633071/2a0000018539788fd7db915ac9af8f0bca96/L_height",
+          "carouselElements": []
+        },
+        {
+          "id": 3,
+          "name": "Физико-математический факультет",
+          "address": "г. Грозный, улица имени Ляпидевского 11 ",
+          "image": "https://chspu.ru/wp-content/themes/liberty/image/mdimg/info/history/bg.jpg",
           "carouselElements": []
         }
       ]
-
     }
   ]
 }
