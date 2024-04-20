@@ -1,6 +1,4 @@
-import { Card } from "antd";
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getUniversities } from "../../redux/universitiesReducer";
@@ -29,7 +27,7 @@ const UniversitiesRender = () => {
     >
       {universities.map((item) => {
         return (
-          <Link className="uni_link" to={`university/${item.id}`}>
+          <Link key={item.id} className="uni_link" to={`university/${item.id}`}>
             <div className="uni_wrapper">
               <div
                 style={{
