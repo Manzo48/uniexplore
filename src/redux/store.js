@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import universitiesSlice from './universitiesReducer'
+import universitiesReducer from './universitiesReducer'; // Убедитесь, что правильно импортируете ваш universities reducer
+import searchReducer from './searchReducer';
 
 export const store = configureStore({
   reducer: {
-    data: universitiesSlice,
+    data: universitiesReducer, // Предполагаем, что все данные университетов находятся здесь
+    search: searchReducer, // Правильное место для search reducer
   },
 });

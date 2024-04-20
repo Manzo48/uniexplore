@@ -1,12 +1,40 @@
 {
-  "data": [
-    
+  "data": [],
+  "students": [
+    {
+      "id": "7bba",
+      "firstName": "asd",
+      "lastName": "das",
+      "email": "dasd@gmail.com",
+      "password": "aaaa",
+      "registrationDate": "2024-04-20T17:16:38.460Z",
+      "token": 50,
+      "confirmPassword": "aaaa"
+    },
+    {
+      "id": "e3d4",
+      "firstName": "Адам",
+      "lastName": "Байсаров",
+      "email": "baysarovv.work@gmail.com",
+      "password": "aaa1",
+      "registrationDate": "2024-04-20T17:17:07.459Z",
+      "token": 9674,
+      "confirmPassword": "aaa1"
+    },
+    {
+      "id": "65bb",
+      "password": "aaa1"
+    },
+    {
+      "id": "a5a3",
+      "password": "aaa1"
+    }
   ],
   "universities": [
     {
       "shortName": "ЧГУ",
       "name": "Чеченский государственный университет",
-      "id": 1,
+      "id": "1",
       "location": [],
       "image": "https://grozny.tv/storage/images/996107bb52ca4a7d.jpeg",
       "frame": [
@@ -29,7 +57,7 @@
     {
       "shortName": "ГГНТУ",
       "name": "Грозненский государственный нефтяной технический университет",
-      "id": 2,
+      "id": "2",
       "location": [],
       "image": "https://www.checheninfo.ru/uploads/posts/2022-02/chechnja-v-ggntu-obsudili-perspektivy-razvitija-v-respublike-vetrovoj-jenergetiki-1.jpg",
       "frame": [
@@ -52,7 +80,7 @@
     {
       "shortName": "ЧГПУ",
       "name": "chgpu",
-      "id": 3,
+      "id": "3",
       "location": [],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCEV_8ncbbExdRmZoE_HU3jFiYpmwhAi4Mf9GE-uyzkynSOCnDMW3PDApF_GIutTXON5w&usqp=CAU",
       "frame": [
@@ -71,7 +99,6 @@
           "carouselElements": []
         }
       ]
-
     }
   ]
 }
