@@ -1,7 +1,9 @@
+import { Flex } from "antd";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getOneUniversity } from "../../redux/universitiesReducer";
+import Slider from "../Slider/Slider";
 
 const Frame = () => {
   const { id } = useParams();
@@ -17,11 +19,16 @@ const Frame = () => {
   const filteredFrame = frame?.frame.filter((item) => item.id === Number(id));
 
   return (
-    <div>
-      {filteredFrame?.map((item) => {
-        return <div>{item.name}</div>;
+    <Flex>
+      {filteredFrame?.map((item, index) => {
+        return (
+          <Slider key={index} images={item.carouselElements} />
+        );
       })}
-    </div>
+      <div>
+        <h1>{filteredFrame[0].name}</h1>
+      </div>
+    </Flex>
   );
 };
 

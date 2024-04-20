@@ -43,7 +43,11 @@
           "name": "Институт физики и математики",
           "address": "г. Грозный, бульвар Дудаева 3",
           "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig",
-          "carouselElements": []
+          "carouselElements": [
+            "https://grozny.tv/storage/images/996107bb52ca4a7d.jpeg",
+            "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig",
+            "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg"
+          ]
         },
         {
           "id": 2,
