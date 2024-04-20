@@ -4,22 +4,67 @@
   ],
   "universities": [
     {
-      "name": "chgu",
+      "shortName": "ЧГУ",
+      "name": "Чеченский государственный университет",
       "id": 1,
       "location": [],
-      "image": "https://grozny.tv/storage/images/996107bb52ca4a7d.jpeg"
+      "image": "https://grozny.tv/storage/images/996107bb52ca4a7d.jpeg",
+      "frame": [
+        {
+          "id": 1,
+          "name": "Институт физики и математики",
+          "address": "г. Грозный, бульвар Дудаева 3",
+          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig"
+        },
+        {
+          "id": 2,
+          "name": "Медицинский университет",
+          "address": "г. Грозный, улица Кадырова 102",
+          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg"
+        }
+      ]
     },
     {
-      "name": "ggntu",
+      "shortName": "ГГНТУ",
+      "name": "Грозненский государственный нефтяной технический университет",
       "id": 2,
       "location": [],
-      "image": "https://www.checheninfo.ru/uploads/posts/2022-02/chechnja-v-ggntu-obsudili-perspektivy-razvitija-v-respublike-vetrovoj-jenergetiki-1.jpg"
+      "image": "https://www.checheninfo.ru/uploads/posts/2022-02/chechnja-v-ggntu-obsudili-perspektivy-razvitija-v-respublike-vetrovoj-jenergetiki-1.jpg",
+      "frame": [
+        {
+          "id": 1,
+          "name": "Институт физики и математики",
+          "address": "г. Грозный, бульвар Дудаева 3",
+          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig"
+        },
+        {
+          "id": 2,
+          "name": "Медицинский университет",
+          "address": "г. Грозный, улица Кадырова 102",
+          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg"
+        }
+      ]
     },
     {
+      "shortName": "ЧГПУ",
       "name": "chgpu",
       "id": 3,
       "location": [],
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCEV_8ncbbExdRmZoE_HU3jFiYpmwhAi4Mf9GE-uyzkynSOCnDMW3PDApF_GIutTXON5w&usqp=CAU"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCEV_8ncbbExdRmZoE_HU3jFiYpmwhAi4Mf9GE-uyzkynSOCnDMW3PDApF_GIutTXON5w&usqp=CAU",
+      "frame": [
+        {
+          "id": 1,
+          "name": "Институт физики и математики",
+          "address": "г. Грозный, бульвар Дудаева 3",
+          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig"
+        },
+        {
+          "id": 2,
+          "name": "Медицинский университет",
+          "address": "г. Грозный, улица Кадырова 102",
+          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg"
+        }
+      ]
 
     }
   ]
