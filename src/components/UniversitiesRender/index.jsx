@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getUniversities } from "../../redux/universitiesReducer";
+import "./index.css";
+
 const UniversitiesRender = () => {
   const universities = useSelector((state) => state.data.universities);
   console.log(universities);
@@ -15,22 +17,42 @@ const UniversitiesRender = () => {
   }, [dispatch]);
 
   return (
-    <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", width: '90%', margin: 'auto' }}>
+    <div
+      style={{
+        display: "flex",
+        gap: "10px",
+        flexWrap: "wrap",
+        width: "90%",
+        margin: "auto",
+        paddingTop: "50px",
+      }}
+    >
       {universities.map((item) => {
         return (
-          <Link style={{width: '600px', paddingTop: '50px'}} to={`university/${item.id}`}>
-            <Card>
-              <div style={{display: 'flex', flexDirection: 'column'}}>
-                <img
-                  width='100%'
-                  height='310px'
-                  style={{objectFit: 'contain'}}
-                  src={item.image}
-                  alt=""
-                />
-                {item.name}
+          <Link className="uni_link" to={`university/${item.id}`}>
+            <div className="uni_wrapper">
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  minHeight: "410px",
+                }}
+              >
+                <div className="uni_description">
+                  <img
+                    height="310px"
+                    width='100%'
+                    style={{ objectFit: "cover" }}
+                    src={item.image}
+                    alt=""
+                  />
+                  <div>
+                    <h2>{item.shortName}</h2>
+                    <h3>{item.name}</h3>
+                  </div>
+                </div>
               </div>
-            </Card>
+            </div>
           </Link>
         );
       })}

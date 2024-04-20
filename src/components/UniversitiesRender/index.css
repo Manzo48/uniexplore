@@ -1,0 +1,15 @@
+.uni_wrapper {
+  width: 600px;
+  border: 1px solid rgba(193, 193, 193, 0.2);
+  border-radius: 5px;
+}
+
+.uni_link {
+  width: 600px;
+  text-decoration: none
+}
+
+.uni_description {
+  width: 90%;
+  margin: auto;
+}
