@@ -1,33 +1,32 @@
-import { Provider } from 'react-redux';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { store } from '../../redux/store';
-import Frame from '../Frame';
-import Header from '../Header';
-import UniversitiesRender from '../UniversitiesRender';
-import University from '../University/university';
-import './App.css';
+import { Provider } from "react-redux";
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
+import { store } from "../../redux/store";
+import Register from "../Register";
+import Frame from "../Frame";
+import Header from "../Header";
+import Login from "../Login";
+import UniversitiesRender from "../UniversitiesRender";
+import University from "../University/university";
+import "./App.css";
 
 function App() {
 
-  const router = createBrowserRouter([
-    {
-      path: '/university/:id',
-      element: <University />,
-    },
-    {
-      path: '/',
-      element: <UniversitiesRender />,
-    },
-    {
-      path: '/university/frame/:id',
-      element: <Frame />
-    }
-  ]);
-  
   return (
     <Provider store={store}>
       <Header />
-      <RouterProvider router={router}/>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<UniversitiesRender />} path={'/'} />
+          <Route element={<University />} path={'/university/:id'} />
+          <Route element={<Frame />} path={'/university/frame/:id'} />
+          <Route element={<Login />} path={'/login'} />
+          <Route element={<Register />} path={'/register'} />
+        </Routes>
+      </BrowserRouter>
     </Provider>
   );
 }

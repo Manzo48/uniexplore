@@ -24,9 +24,8 @@ const University = () => {
       {university?.frame.map((item) => {
         console.log(item);
         return (
-          <div className="frame">
+          <div key={item.id} className="frame">
             <Link to={`/university/frame/${item.id}`}
-              key={item.id}
               style={{ textDecoration: "none", color: "#000" }}
             >
               <div>
