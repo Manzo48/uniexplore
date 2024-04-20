@@ -2,12 +2,13 @@ import { Carousel } from 'antd';
 import './index.css'; 
 
 const Slider = ({ images }) => {
+  console.log(images)
   return (
     <div className="carousel-container"> 
-      <Carousel autoplay>
+      <Carousel style={{width: '600px'}} autoplay>
         {images.map((image, index) => (
           <div className="carousel-item" key={index}> 
-            <img src={image} alt={`Slide ${index + 1}`} />
+            <img style={{objectFit: 'cover'}} width='600px' height='400px' src={image} alt={`Slide ${index + 1}`} />
           </div>
         ))}
       </Carousel>
