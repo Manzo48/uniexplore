@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header style={{padding: '10px', borderBottom: '1px solid gray'}}>
       <Flex align='center' justify="space-between">
-        <h2>LOGO</h2>
+        <div to={'/'}>LOGO</div>
         <div style={{width: '40%'}}>
           <Search
             placeholder="input search text"

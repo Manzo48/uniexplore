@@ -14,13 +14,15 @@
           "id": 1,
           "name": "Институт физики и математики",
           "address": "г. Грозный, бульвар Дудаева 3",
-          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig"
+          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig",
+          "carouselElements": []
         },
         {
           "id": 2,
           "name": "Медицинский университет",
           "address": "г. Грозный, улица Кадырова 102",
-          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg"
+          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg",
+          "carouselElements": []
         }
       ]
     },
@@ -35,13 +37,15 @@
           "id": 1,
           "name": "Институт физики и математики",
           "address": "г. Грозный, бульвар Дудаева 3",
-          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig"
+          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig",
+          "carouselElements": []
         },
         {
           "id": 2,
           "name": "Медицинский университет",
           "address": "г. Грозный, улица Кадырова 102",
-          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg"
+          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg",
+          "carouselElements": []
         }
       ]
     },
@@ -56,13 +60,15 @@
           "id": 1,
           "name": "Институт физики и математики",
           "address": "г. Грозный, бульвар Дудаева 3",
-          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig"
+          "image": "https://avatars.mds.yandex.net/get-altay/5255911/2a0000018206501001576ba02ddd0d3220eb/orig",
+          "carouselElements": []
         },
         {
           "id": 2,
           "name": "Медицинский университет",
           "address": "г. Грозный, улица Кадырова 102",
-          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg"
+          "image": "https://сопк.рф/wp-content/uploads/2019/11/Kolledzh-CHGU-groznyj.jpg",
+          "carouselElements": []
         }
       ]
 

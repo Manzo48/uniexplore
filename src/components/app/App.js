@@ -1,6 +1,7 @@
 import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { store } from '../../redux/store';
+import Frame from '../Frame';
 import Header from '../Header';
 import UniversitiesRender from '../UniversitiesRender';
 import University from '../University/university';
@@ -17,6 +18,10 @@ function App() {
       path: '/',
       element: <UniversitiesRender />,
     },
+    {
+      path: '/university/frame/:id',
+      element: <Frame />
+    }
   ]);
   
   return (
