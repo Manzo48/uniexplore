@@ -1,0 +1,59 @@
+.panorama-container {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Высоту контейнера можно настроить по вашему вкусу, здесь используется 70% высоты экрана */
+    overflow: hidden; /* Ограничиваем видимую область, чтобы изображение не выходило за границы */
+    border-radius: 10px; /* Добавляем скругления краёв контейнера */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Добавляем тень для эффекта возвышения */
+  }
+  
+  .panorama-image-container {
+    width: 150%; /* Размер изображения увеличен в два раза */
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease-out;
+  }
+  
+  .panorama-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navigation-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .arrow-button {
+    background-color: rgba(255, 255, 255, 0.5); /* Прозрачный фон для кнопок */
+    border: none;
+    border-radius: 50%; /* Круглая форма для кнопок */
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+  }
+  
+  .arrow-button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Цвет фона при наведении */
+  }
+  
+  .arrow-button:focus {
+    outline: none; /* Убираем контур фокуса для кнопок */
+  }
+  .change-image-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .image-input-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }

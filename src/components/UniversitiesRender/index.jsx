@@ -12,6 +12,7 @@ import SuffixIcon from "../../images/icons/SuffixIcon";
 import { useState } from "react";
 import Card from "../Card";
 
+
 const UniversitiesRender = () => {
   const searchValue = useSelector((state) => state.search.searchValue);
   const universities = useSelector((state) => state.data.universities);
