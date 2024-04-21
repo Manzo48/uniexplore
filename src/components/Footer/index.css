@@ -1,0 +1,7 @@
+.footer {
+  background: rgba(75, 79, 176, 1);
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  margin-top: 150px;
+}

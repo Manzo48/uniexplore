@@ -36,12 +36,14 @@ const userSlice = createSlice({
   },
 });
 
+const API_URL = 'https://a157-31-173-210-218.ngrok-free.app/'
+
 export const createUser = createAsyncThunk(
   'post/user',
   async (payload) => {
     try {
       const response = await axios.post(
-        'http://localhost:4000/students',
+        API_URL,
         payload,
       );
       return response.data;
@@ -56,7 +58,7 @@ export const loginUser = createAsyncThunk(
   async (payload) => {
     try {
       const response = await axios.post(
-        'http://localhost:4000/students',
+        API_URL,
         payload,
       );
       const data = await response.data;

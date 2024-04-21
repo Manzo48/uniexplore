@@ -1,0 +1,9 @@
+.search_wrapper {
+  width: 43%;
+}
+
+.search {
+  border: 1px solid rgba(0, 41, 255, 1);
+  border-radius: 30px;
+  height: 44px;
+}

@@ -12,6 +12,7 @@ import Login from "../Login";
 import UniversitiesRender from "../UniversitiesRender";
 import University from "../University/university";
 import "./App.css";
+import Footer from "../Footer";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route element={<Register />} path={'/register'} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </Provider>
   );
 }

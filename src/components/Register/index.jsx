@@ -30,20 +30,14 @@ const Register = () => {
 
   const steps = [
     {
-      title: 'Personal Info',
+      title: 'Никнейм',
       content: (
         <>
           <Form.Item
-            name="firstName"
-            rules={[{ required: true, message: "Please input your first name!" }]}
+            name="username"
+            rules={[{ required: true, message: "Please input your nickname!" }]}
           >
-            <Input placeholder="First Name" onChange={e => setFormData({ ...formData, firstName: e.target.value })} />
-          </Form.Item>
-          <Form.Item
-            name="lastName"
-            rules={[{ required: true, message: "Please input your last name!" }]}
-          >
-            <Input placeholder="Last Name" onChange={e => setFormData({ ...formData, lastName: e.target.value })} />
+            <Input placeholder="First Name" onChange={e => setFormData({ ...formData, username: e.target.value })} />
           </Form.Item>
         </>
       ),
