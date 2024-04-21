@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Flex } from "antd";
 import Link from "antd/es/typography/Link";
@@ -9,29 +10,25 @@ import RatingIcon from "../../images/icons/RatingIcon";
 import ContactsIcon from "../../images/icons/ContactsIcon";
 import AboutUsIcon from "../../images/icons/AboutUsIcon";
 import HeaderList from "./HeaderList";
-import { useDispatch, useSelector } from "react-redux";
 import { getOneUser } from "../../redux/userReducer";
 
 const Header = () => {
-  const token = useSelector((state) => state.users.token);
-  const id = useSelector((state) => state?.users?.id);
-  const user = useSelector((state) => state.users.user);
-
   const dispatch = useDispatch();
+  const token = useSelector((state) => state.users.token);  // Ensure the path here matches your Redux state structure
+  const user = useSelector((state) => state.users.user);    // Ditto
+  const id = useSelector((state) => state.users.id);        // Ditto
 
   useEffect(() => {
-    if (id) {
-      dispatch(getOneUser(id));
+    if (token && id) {
+      dispatch(getOneUser({id}));
     }
-  }, [dispatch, id]);
-
-  console.log(user);
+  }, [dispatch, token, id]);
 
   return (
     <header>
       <Flex style={{ width: "100%" }} align="center" justify="space-between">
         <a href={"/"}>
-          <img width="70%" src={logo} alt="" />
+          <img width="70%" src={logo} alt="Logo" />
         </a>
         <Flex gap="50px">
           <HeaderList children={<UniversitiesIcon />} text="Университеты" />
@@ -41,8 +38,8 @@ const Header = () => {
         </Flex>
         <Flex className="signin">
           <Avatar size="large" icon={<UserOutlined />} />
-          <Link href={token ? "/profile" : "/login"}>
-            {token ? "профиль" : "войти"}
+          <Link href={token ?`/profile/${id}` : "/login"}>
+            {token ? user?.name || "Профиль" : "Войти"} 
           </Link>
         </Flex>
       </Flex>

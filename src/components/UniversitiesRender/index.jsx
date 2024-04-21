@@ -65,8 +65,8 @@ const UniversitiesRender = () => {
             <h2>{item.shortName}</h2>
             <h3>{item.name}</h3>
             <Flex gap="50px">
-              <HeaderList children={<StudentsIcon />} text="11.234" />
-              <HeaderList children={<DirectionIcon />} text="50" />
+              <HeaderList children={<StudentsIcon />} text={item.leftStudents || Math.floor(Math.random()*100000)} />
+              <HeaderList children={<DirectionIcon />} text={item.dirCount || Math.floor(Math.random()*100)} />
             </Flex>
           </Card>
         ))}
