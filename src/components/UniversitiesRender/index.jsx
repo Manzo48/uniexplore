@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { getUniversities } from "../../redux/universitiesReducer";
 import "./index.css";
 
+
 const UniversitiesRender = () => {
   const searchValue = useSelector(state => state.search.searchValue); // Исправлено
   const universities = useSelector(state => state.data.universities); // Предполагаем, что universities находятся здесь
