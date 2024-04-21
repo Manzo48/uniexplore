@@ -1,7 +1,6 @@
 import { Flex } from "antd";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import DirectionIcon from "../../images/icons/DirectionIcon";
 import StudentsIcon from "../../images/icons/StudentsIcon";
 import { getUniversities } from "../../redux/universitiesReducer";
@@ -11,6 +10,7 @@ import cap from "../../images/cap.png";
 import "./index.css";
 import SuffixIcon from "../../images/icons/SuffixIcon";
 import { useState } from "react";
+import Card from "../Card";
 
 const UniversitiesRender = () => {
   const searchValue = useSelector((state) => state.search.searchValue);
@@ -50,7 +50,7 @@ const UniversitiesRender = () => {
             <SuffixIcon /> Фильтры
           </button>
           {openFilters && (
-            <Flex gap='35px' className="title_filters">
+            <Flex gap="35px" className="title_filters">
               <div>Рейтинг</div>
               <div>Студенты</div>
               <div>Направления</div>
@@ -60,19 +60,14 @@ const UniversitiesRender = () => {
       </div>
       <div className="universities">
         {filteredUniversities.map((item) => (
-          <Link key={item.id} className="uni_link" to={`university/${item.id}`}>
-            <div className="uni_wrapper">
-              <img src={item.image} alt={item.shortName} />
-              <div className="uni_description">
-                <h2>{item.shortName}</h2>
-                <h3>{item.name}</h3>
-                <Flex gap="50px">
-                  <HeaderList children={<StudentsIcon />} text="11.234" />
-                  <HeaderList children={<DirectionIcon />} text="50" />
-                </Flex>
-              </div>
-            </div>
-          </Link>
+          <Card link={"university/"} item={item}>
+            <h2>{item.shortName}</h2>
+            <h3>{item.name}</h3>
+            <Flex gap="50px">
+              <HeaderList children={<StudentsIcon />} text="11.234" />
+              <HeaderList children={<DirectionIcon />} text="50" />
+            </Flex>
+          </Card>
         ))}
       </div>
     </div>

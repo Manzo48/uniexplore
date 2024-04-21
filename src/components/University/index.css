@@ -5,3 +5,47 @@
   border-radius: 5px;
   padding: 20px;
 }
+
+.about_uni img {
+  width: 254px;
+  height: 252px;
+  margin-top: 50px;
+}
+
+.about_uni {
+  width: 90%;
+  margin: auto;
+  border-radius: 30px;
+  background: #fff ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.uni_title {
+  font-family: "Jura";
+  text-align: center;
+  font-size: 24px;
+  padding: 50px 0px;
+}
+
+.uni_name {
+  color: rgba(82, 0, 255, 1);
+  font-size: 24px;
+}
+
+.uni h1 {
+  font-size: 40px;
+  font-family: 'Jura';
+}
+
+.uni p {
+  font-size: 16px;
+  font-family: 'Jura';
+  width: 993px;
+  line-height: 18px;
+  margin-top: 15px;
+}
