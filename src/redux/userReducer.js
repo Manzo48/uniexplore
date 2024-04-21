@@ -5,6 +5,7 @@ const initialState = {
   signIn: false,
   signUp: false,
   users: [],
+  user: null,
   loading: false,
   error: '',
   token: localStorage.getItem('token'),
@@ -33,17 +34,33 @@ const userSlice = createSlice({
     builder.addCase(fetchUsers.pending.type, (state) => {
       state.loading = true;
     });
+    builder.addCase(createUser.rejected.type, (state, action) => {
+      state.loading = false;
+      state.error = action.error.message;
+    });
+    builder.addCase(loginUser.rejected.type, (state, action) => {
+      state.loading = false;
+      state.error = action.error.message;
+    });
+    builder.addCase(fetchUsers.rejected.type, (state, action) => {
+      state.loading = false;
+      state.error = action.error.message;
+    });
+    builder.addCase(getOneUser.fulfilled.type, (state, action) => {
+      state.loading = false;
+      state.user = action.payload
+    })
   },
 });
 
-const API_URL = 'https://a157-31-173-210-218.ngrok-free.app/'
 
 export const createUser = createAsyncThunk(
   'post/user',
   async (payload) => {
     try {
+      console.log(payload)
       const response = await axios.post(
-        API_URL,
+        'http://localhost:4001/users',
         payload,
       );
       return response.data;
@@ -58,7 +75,7 @@ export const loginUser = createAsyncThunk(
   async (payload) => {
     try {
       const response = await axios.post(
-        API_URL,
+        'http://localhost:4001/login',
         payload,
       );
       const data = await response.data;
@@ -71,9 +88,18 @@ export const loginUser = createAsyncThunk(
   },
 );
 
+export const getOneUser = createAsyncThunk('fetch/user', async ({id}) => {
+  try {
+    const response = await axios.get(`http://localhost:4001/user/${id}`)
+    return response.data
+  } catch (error) {
+    
+  }
+})
+
 export const fetchUsers = createAsyncThunk('fetch/users', async () => {
   try {
-    const response = await axios.get('http://localhost:4000/user/users');
+    const response = await axios.get('http://localhost:4001/user/users');
     return response.data;
   } catch (error) {
     return error;
