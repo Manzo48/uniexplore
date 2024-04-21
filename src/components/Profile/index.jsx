@@ -17,6 +17,7 @@ const Profile = () => {
   }, [dispatch])
 
   const user = users.find(item => item._id === id)
+  console.log(user)
 
   return (
     <div>

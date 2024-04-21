@@ -61,7 +61,7 @@ const UniversitiesRender = () => {
       </div>
       <div className="universities">
         {filteredUniversities.map((item) => (
-          <Card link={"university/"} item={item}>
+          <Card key={item.id} link={"university/"} item={item}>
             <h2>{item.shortName}</h2>
             <h3>{item.name}</h3>
             <Flex gap="50px">
