@@ -1,15 +1,111 @@
+.universities {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+}
+
 .uni_wrapper {
-  width: 600px;
-  border: 1px solid rgba(193, 193, 193, 0.2);
-  border-radius: 5px;
+  width: 400px;
+  border: 1px solid rgba(85, 112, 207, 1);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.uni_wrapper img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .uni_link {
-  width: 600px;
   text-decoration: none
 }
 
 .uni_description {
-  width: 90%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+  align-items: center;
+  padding-bottom: 40px;
+  min-height: 200px;
 }
+
+.uni_description h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.uni_description h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+  position: relative;
+}
+
+.title img {
+  position: absolute;
+  right: 350px;
+  bottom: 300px;
+}
+
+.title h1 {
+  font-size: 48px;
+  text-align: center;
+  font-family: 'Jura';
+  line-height: 56px;
+  padding-bottom: 30px;
+}
+
+.title h3 {
+  font-weight: 400;
+  font-family: 'Jura';
+  font-size: 24px;
+  text-align: center;
+}
+
+.title span {
+  color: rgba(82, 0, 255, 1);
+}
+
+.title button {
+  border: none;
+  background: rgba(82, 0, 255, 1);
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Jura';
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  padding-bottom: 7px;
+  width: 127px;
+  margin: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.title_filters div {
+  padding: 7px 24px;
+  background: #fff;
+  border: 1px solid rgba(82, 0, 255, 1);
+  border-radius: 20px;
+  color: rgba(82, 0, 255, 1);
+  font-family: 'Jura';
+  text-align: center;
+  cursor: pointer;
+}
+
