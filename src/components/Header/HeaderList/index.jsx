@@ -1,11 +1,15 @@
 import { Flex } from "antd";
 import React from "react";
-import './index.css'
+import "./index.css";
 
-const HeaderList = ({ children, text }) => {
+const HeaderList = ({ children, text, description }) => {
   return (
     <Flex className="list_element" align="center" gap="13px">
-      {children}{text}
+      <div style={{display: 'flex', alignItems:"center", gap: '10px'}}>
+        {children}
+        {text}
+      </div>
+      <div style={{color: 'rgba(0, 165, 7, 1)'}}>{description}</div>
     </Flex>
   );
 };
