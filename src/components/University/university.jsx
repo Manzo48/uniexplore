@@ -13,7 +13,7 @@ import CreateDateIcon from "../../images/icons/CreateDateIcon";
 import AllStudentsIcon from "../../images/icons/AllStudentsIcon";
 import BudgetIcon from "../../images/icons/BudgetIcon";
 import BallsIcon from "../../images/icons/BallsIcon";
-
+import CommentSection from "../Comments/CommentSection";
 const University = () => {
   const { id } = useParams();
 
@@ -61,6 +61,7 @@ const University = () => {
             </Card>
           );
         })}
+        <CommentSection/>
       </Flex>
     </div>
   );

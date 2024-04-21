@@ -1,0 +1,161 @@
+.comment-section {
+    width: 100%;
+    height: 700px;
+  }
+  
+  .comment-form {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .comment-list-wrapper
+  .comment-textarea {
+    width: calc(100% - 20px); /* Избегаем горизонтального скролла из-за рамки */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  .comment-form-mid{
+    max-width: 60%;
+  }
+  .submit-button,
+  .attach-photo-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  h2{
+    color: white;
+  }
+  .comment-list-wrapper{
+    width: 100%;
+    height: 500px;
+    background-color: #007bff;
+    display: flex;
+    flex-direction: column;
+  }
+  .submit-button:hover,
+  .attach-photo-button:hover {
+    background-color: #0056b3;
+  }
+  .comment-form-wrapper{
+    margin: 0 auto;
+    width: 60%;
+  }
+  .comment-form-high {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 30%;
+  }
+  
+  .star-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-rating .RiStarFill {
+    color: #ffc107;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .star-rating .RiStarFill:hover {
+    color: #ffcd39;
+  }
+  
+  .button__section {
+    width: 900px;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .comment {
+    display: flex; /* Сделаем комментарий гибким для выравнивания */
+    align-items: center; /* Выравнивание по вертикали */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  .comment-content-info {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение элементов по горизонтали */
+    align-items: center; /* Выравниваем элементы по вертикали */
+  }
+  .avatar-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .comment-content-wrapper {
+    flex: 1;
+  }
+  
+  .comment-content {
+    margin-bottom: 10px;
+  }
+  .comment-list-container {
+    max-height: 300px; /* Максимальная высота контейнера комментариев */
+    overflow-y: auto; /* Включаем вертикальную прокрутку при необходимости */
+  }
+  .star-rating .RiStarFill {
+    font-size: 20px;
+    color: #ffc107;
+    margin-right: 5px;
+  }
+  
+  .star-filled {
+    color: #ffc107;
+  }
+  
+  .star-empty {
+    color: #ced4da;
+  }
+  .h2{
+    margin-top: 50px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px;
+  }
+  .comment-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Размещаем отзывы в колонках с минимальной шириной 300px */
+    gap: 20px; /* Расстояние между отзывами */
+    max-width: 960px; /* Максимальная ширина контейнера для отзывов */
+    margin: 0 auto; /* Центрируем контейнер на странице */
+  }
+  
+  .comment {
+    width: 100%;
+  }
+  .form-title{
+    color: #007bff;
+  }
+  @media screen and (max-width: 767px) {
+    .comment-list-container {
+      grid-template-columns: repeat(2, 1fr); /* При маленьком экране отзывы располагаются в две колонки */
+    }
+  }
