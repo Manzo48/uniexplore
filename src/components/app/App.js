@@ -13,6 +13,7 @@ import UniversitiesRender from "../UniversitiesRender";
 import University from "../University/university";
 import "./App.css";
 import Footer from "../Footer";
+import Profile from "../Profile";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route element={<Frame />} path={'/university/frame/:id'} />
           <Route element={<Login />} path={'/login'} />
           <Route element={<Register />} path={'/register'} />
+          <Route element={<Profile />} path={'/profile/:id'} />
         </Routes>
       </BrowserRouter>
       <Footer />

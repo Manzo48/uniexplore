@@ -99,7 +99,7 @@ export const getOneUser = createAsyncThunk('fetch/user', async ({id}) => {
 
 export const fetchUsers = createAsyncThunk('fetch/users', async () => {
   try {
-    const response = await axios.get('http://localhost:4001/user/users');
+    const response = await axios.get('http://localhost:4001/users');
     return response.data;
   } catch (error) {
     return error;

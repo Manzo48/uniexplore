@@ -36,11 +36,11 @@ const University = () => {
         <h1>{university?.name}</h1>
         <p>{university?.description}</p>
         <Flex justify='center' align='center' style={{width: '80%', margin: 'auto', paddingBottom: '80px', paddingTop: '70px'}} gap='80px 130px' wrap="wrap">
-          <HeaderList children={<CreateDateIcon />} text='Дата основания' description='07.02.1938г'/>
-          <HeaderList children={<AllStudentsIcon />} text='Дата основания' description='50'/>
-          <HeaderList children={<BudgetIcon />} text='Дата основания' description='50'/>
-          <HeaderList children={<BallsIcon />} text='Дата основания' description='50'/>
-          <HeaderList children={<DirectionIcon />} text='Дата основания' description='50'/>
+          <HeaderList children={<CreateDateIcon />} text='Дата основания' description={university?.date}/>
+          <HeaderList children={<AllStudentsIcon />} text='Направления подготовки' description={university?.dirCount}/>
+          <HeaderList children={<BudgetIcon />} text='Бюджетные места' description={`2024: ${university?.budget}`}/>
+          <HeaderList children={<BallsIcon />} text='Минимальные баллы' description={university?.minBal}/>
+          <HeaderList children={<DirectionIcon />} text='Студентов выпущено' description={university?.leftStudents}/>
         </Flex>
       </div>
       <Flex
@@ -55,8 +55,8 @@ const University = () => {
               <h2>{item.name}</h2>
               <h3>{item.address}</h3>
               <Flex gap="50px">
-                <HeaderList children={<StudentsIcon />} text="11.234" />
-                <HeaderList children={<DirectionIcon />} text="50" />
+              <HeaderList children={<StudentsIcon />} text={item.leftStudents || Math.floor(Math.random()*100000)} />
+              <HeaderList children={<DirectionIcon />} text={item.dirCount || Math.floor(Math.random()*100)} />
               </Flex>
             </Card>
           );
